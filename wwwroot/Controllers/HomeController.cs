@@ -3,6 +3,6 @@ public class HomeController : Controller
 {
  public ActionResult Index()
  {
- return Ok("This index of the HomeController");
+ return Ok("This is the index of the HomeController");
  }
 }

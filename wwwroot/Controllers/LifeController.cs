@@ -3,10 +3,10 @@ public class LifeController : Controller
 {
  public ActionResult Index()
  {
- return Ok("This index of the LifeController");
+ return Ok("This is the index of the LifeController");
  }
  public ActionResult Quote()
  {
- return Ok("This quote of the LifeController");
+ return Ok("This is the quote of the LifeController");
  }
 }
