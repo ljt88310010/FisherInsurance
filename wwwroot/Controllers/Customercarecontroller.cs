@@ -8,6 +8,6 @@ public class CustomercareController : Controller
   [Route("Customercare/Claims")]
  public ActionResult Quote()
  {
-      return Ok("This is Qute of the Customercare");
+      return Ok("This is Quote of the Customercare");
  }
 }
