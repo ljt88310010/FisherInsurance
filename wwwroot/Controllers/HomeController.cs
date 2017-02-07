@@ -1,8 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-public class HomeController : Controller
+namespace FisherInsurance.Controllers
 {
- public ActionResult Index()
- {
- return Ok("This is the index of the HomeController");
- }
+    [Route("")]
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            return Ok("This is the index of the HomeController");
+        }
+    }
 }

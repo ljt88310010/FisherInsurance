@@ -1,14 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
-public class XhomeController : Controller
+namespace FisherInsurance.Controllers
 {
-[Route("Home")]
- public ActionResult Index()
- {
- return Ok("This is the index of the XhomeController");
- }
- [Route("Home/Quote")]
- public ActionResult Quote()
- {
- return Ok("This is the Quote of the XhomeController");
- }
+    [Route("home")]
+    public class XhomeController : Controller
+    {
+        public ActionResult Index()
+        {
+        return Ok("This is the index of the XhomeController");
+        }
+        [Route("Home/Quote")]
+        public ActionResult Quote()
+        {
+        return Ok("This is the Quote of the XhomeController");
+        }
+    }
 }
