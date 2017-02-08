@@ -1,7 +1,7 @@
 using System;
 namespace FisherInsurance.Models
 {
- public class claim
+ public class Claims
  {
  public int Id { get; set; }
  public string PolicyType { get; set; }
