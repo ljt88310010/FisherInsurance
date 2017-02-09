@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
+using FisherInsurance.Models;
 namespace FisherInsurance.Controllers
 {
     public class LifeController : Controller
@@ -10,7 +12,14 @@ namespace FisherInsurance.Controllers
         }
         public ActionResult Quote()
         {
-            return View();
+            Quote quote = new Quote
+            {
+            Id = 345,
+            Product = "Life Insurance",
+            ExpireDate = DateTime.Now.AddDays(45),
+            Price = 45.00M
+            };
+            return View(quote);
             //return Ok("This is the quote of the LifeController");
         }
     }

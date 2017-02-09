@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using FisherInsurance.Models;
+using System;
 namespace FisherInsurance.Controllers
 {
     public class XhomeController : Controller
@@ -10,7 +12,14 @@ namespace FisherInsurance.Controllers
         }
         public ActionResult Quote()
         {
-            return View();
+            Quote quote = new Quote
+            {
+            Id = 345,
+            Product = "Home Insurance",
+            ExpireDate = DateTime.Now.AddDays(45),
+            Price = 45.00M
+            };
+            return View(quote);
             //return Ok("This is the Quote of the XhomeController");
         }
     }
