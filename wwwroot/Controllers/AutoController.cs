@@ -5,11 +5,13 @@ namespace FisherInsurance.Controllers
     {
         public ActionResult Index()
         {
-            return Ok("This is the index of the AutoController");
+            //return Ok("This is the index of the AutoController");
+            return View();
         }
         public ActionResult Quote()
         {
-            return Ok("This is the quote of the AutoController");
+            //return Ok("This is the quote of the AutoController");
+            return View();
         }
     }
 }

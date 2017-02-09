@@ -5,11 +5,13 @@ namespace FisherInsurance.Controllers
     {
         public ActionResult Index()
         {
-            return Ok("This is the index of the LifeController");
+            return View();
+            //return Ok("This is the index of the LifeController");
         }
         public ActionResult Quote()
         {
-            return Ok("This is the quote of the LifeController");
+            return View();
+            //return Ok("This is the quote of the LifeController");
         }
     }
 }
