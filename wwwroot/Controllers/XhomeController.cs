@@ -3,13 +3,16 @@ using FisherInsurance.Models;
 using System;
 namespace FisherInsurance.Controllers
 {
+    [Route("homeinsurance")]
     public class XhomeController : Controller
     {
+        [RouteAttribute("")]
         public ActionResult Index()
         {
             return View();
             //return Ok("This is the index of the XhomeController");
         }
+        [RouteAttribute("quote")]
         public ActionResult Quote()
         {
             Quote quote = new Quote

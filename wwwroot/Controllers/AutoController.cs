@@ -3,14 +3,14 @@ using FisherInsurance.Models;
 using System;
 namespace FisherInsurance.Controllers
 {
-    public class AutoController : Controller
+    public class IAutoController : Controller
     {
-        public ActionResult Index()
+        public IActionResult Index()
         {
             //return Ok("This is the index of the AutoController");
             return View();
         }
-        public ActionResult Quote()
+        public IActionResult Quote()
         {
             Quote quote = new Quote
             {
