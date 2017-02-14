@@ -3,7 +3,7 @@ using FisherInsurance.Models;
 using System;
 namespace FisherInsurance.Controllers
 {
-    public class IAutoController : Controller
+    public class AutoController : Controller
     {
         public IActionResult Index()
         {
